@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yo Portfolio</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="./asset/js/jquery-1.12.4.min.js"></script>
+    <script src="./asset/js/common.js"></script>
+    <script src="./asset/js/main.js"></script>
+</head>
+<body>
+    <div class="loading">
+        <div class="wrapper">
+            <div class="text-area one">Markup Developer</div>
+            <div class="text-area two">yoon jeong</div>
+            <div class="text-area three">Portfolio</div>
+        </div>
+    </div>
+    <div class="cursor hide">
+    </div>
+    <header class="header-area color">
+        <h1 class="logo">
+            <a href="">
+                yo
+                <img src="./asset/images/smile.svg" alt="smile">
+            </a>
+        </h1>
+        <button type="button" class="btn-menu">
+            <div class="open">MENU</div>
+            <div class="close hide">CLOSE</div>
+        </button>
+        <div class="menu-area">
+            <div class="menu-wrap">
+                <ul class="pro-list">
+                    <li class="pro-item"><a href="https://yoonnjeong.github.io/kakao/" target="_blank">
+                        <div class="num-tx">01.<span class="space"></span>PC</div>
+                        <div class="title-tx">kakao</div>
+                    </a></li>
+                    <li class="pro-item"><a href="https://yoonnjeong.github.io/BelArosa/" target="_blank">
+                        <div class="num-tx">02.<span class="space"></span>Response</div>
+                        <div class="title-tx">Belarosa</div>
+                    </a></li>
+                    <li class="pro-item"><a href="https://yoonnjeong.github.io/naver-shop/" target="_blank"  onclick="window.open(this.href, '', 'width=375, height=667'); return false;">
+                        <div class="num-tx">03.<span class="space"></span>Mobile</div>
+                        <div class="title-tx">Naver Shopping</div>
+                    </a></li>
+                    <li class="pro-item"><a href="https://yoonnjeong.github.io/naver-career/" target='_blank'>
+                        <div class="num-tx">04.<span class="space"></span>Response</div>
+                        <div class="title-tx">Naver Carrer</div>
+                    </a></li>
+                    <li class="pro-item"><a href="https://yoonnjeong.github.io/andar-js/" target="_blank"  onclick="window.open(this.href, '', 'width=375, height=667'); return false;">
+                        <div class="num-tx">05.<span class="space"></span>Mobile</div>
+                        <div class="title-tx">andar</div>
+                    </a></li>
+                    <li class="pro-item"><a href="https://yoonnjeong.github.io/SEOUL/" target="_blank">
+                        <div class="num-tx">06.<span class="space"></span>PC</div>
+                        <div class="title-tx">Seoul City Hall</div>
+                    </a></li>
+                    <li class="pro-item"><a href="https://yoonnjeong.github.io/naver/" target="_blank">
+                        <div class="num-tx">07.<span class="space"></span>PC</div>
+                        <div class="title-tx">Naver</div>
+                    </a></li>
+                </ul>
+                <div class="contact-area"><a href="tel:010-8927-6518">Contact</a></div>
+            </div>
+        </div>
+    </header>
+    <main class="contatiner">
+        <div class="back-gd">
+            <div class="back"></div>
+            <div class="back-wh">
+                <span class="ic-smile">☺</span>
+                <span class="ic-smile">☺</span>
+                <span class="ic-smile">☺</span>
+                <span class="ic-smile">☺</span>
+                <span class="ic-smile">☺</span>
+                <span class="ic-smile">☺</span>
+            </div>
+            <section class="sc-main">
+                <h2 class="title-wrap">
+                    <div class="title left"><div class="over">Exhaustive</div></div>
+                    <div class="title right"><div class="over">Diligent</div></div>
+                    <div class="title left"><div class="over">Progress</div></div>
+                </h2>
+                <div class="scroll">
+                    <div class="scroll-txt">KEEP SCROLLING</div>
+                    <div class="arrow-down">
+                        <svg width="32" height="32" viewBox="0 0 45 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.3985 64.4118C21.5626 65.5759 23.4501 65.5759 24.6142 64.4118L43.5853 45.4407C44.7494 44.2766 44.7494 42.3891 43.5853 41.2249C42.4211 40.0608 40.5337 40.0608 39.3695 41.2249L22.5063 58.0881L5.64319 41.2249C4.47903 40.0608 2.59156 40.0608 1.4274 41.2249C0.263247 42.3891 0.263247 44.2766 1.4274 45.4407L20.3985 64.4118ZM19.5253 0.696289L19.5253 62.3039L25.4874 62.3039L25.4874 0.696289L19.5253 0.696289Z" fill="#FFFFFF"></path>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="sc-ambition">
+            <div class="text-wrap">
+                <h2 class="blind">introduce me</h2>
+                <div class="txt left"><span class="space">Motivated</span>by</div>
+                <div class="txt-wrap">
+                    <p class="desc">
+                        나 자신에 한계에 부딪힐 때 더 많은 자극을 받고, <br>
+                        극복해 나가는 자신을 통해 자신감을 얻습니다.
+                    </p>
+                    <div class="txt">limit</div>
+                </div>
+                <div class="txt right">Confidence</div>
+                <div class="txt-wrap">
+                    <div class="txt"><span class="space">through</span>overcoming</div>
+                </div>
+            </div>
+        </section>
+        <section class="sc-project">
+            <h2 class="txt-wrap">Selected</h2>
+            <div class="txt-wrap">
+                <p class="desc">I am grateful and proud to introduce <br>the project</p>
+                <h2 class="txt">Projects</h2>
+            </div>
+            <div class="project">
+                <div class="list-zone">
+                    <div class="list-wrap">
+                        <ul class="pro-list">
+                            <li class="pro-item">
+                                <div class="probtn-wrap">
+                                    <a href="https://poised-phosphorus-84f.notion.site/kakao-mobility-eff37f806d8d41cfaa9fc084127feb46" target="_blank">
+                                        <div class="ig-wrap">
+                                            <img src="./asset/images/kakaoig.png" alt="kakao">
+                                            <div class="text-box">
+                                                <p class="detail-title">TYPE</p>
+                                                <span class="type">PC</span>
+                                            </div>
+                                            <div class="code-area">
+                                                <p class="txt">⇨ Git을 통한 프로젝트 협력작업</p>
+                                                <div class="b_txt">More Review</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="https://yoonnjeong.github.io/kakao/" target="_blank">
+                                        <div class="pro-name">
+                                            <i class="ic-line"></i>
+                                            <div class="name-wrap">
+                                                <div class="pro-title">kakao</div>
+                                                <div class="point">
+                                                    <span class="sub-tit">Team project</span>
+                                                    <div class="cover"></div>
+                                                </div>
+                                            </div>
+                                            <div class="arrow-right">
+                                                <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M31.0607 13.0607C31.6464 12.4749 31.6464 11.5251 31.0607 10.9393L21.5147 1.3934C20.9289 0.807611 19.9792 0.807611 19.3934 1.3934C18.8076 1.97919 18.8076 2.92893 19.3934 3.51472L27.8787 12L19.3934 20.4853C18.8076 21.0711 18.8076 22.0208 19.3934 22.6066C19.9792 23.1924 20.9289 23.1924 21.5147 22.6066L31.0607 13.0607ZM0 13.5L30 13.5L30 10.5L0 10.5L0 13.5Z" fill="#000000"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="pro-item">
+                                <div class="probtn-wrap">
+                                    <a href="https://poised-phosphorus-84f.notion.site/BelArosa-9e3c03ccea75494594040ba3846eafbd" target="_blank">
+                                        <div class="ig-wrap">
+                                            <img src="./asset/images/belarosaig.png" alt="belarosa">
+                                            <div class="text-box">
+                                                <p class="detail-title">TYPE</p>
+                                                <span class="type">Response</span>
+                                            </div>
+                                            <div class="code-area">
+                                                <p class="txt">⇨ Gsap의 ScrollTrigger를 통한 Timeline 구현</p><div class="b_txt">More Review</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="https://yoonnjeong.github.io/BelArosa/" target="_blank">
+                                        <div class="pro-name">
+                                            <i class="ic-line"></i>
+                                            <div class="name-wrap">
+                                                <div class="pro-title">Belarosa</div>
+                                                <div class="point">
+                                                    <span class="sub-tit">Gsap</span>
+                                                    <div class="cover"></div>
+                                                </div>
+                                            </div>
+                                            <div class="arrow-right">
+                                                <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M31.0607 13.0607C31.6464 12.4749 31.6464 11.5251 31.0607 10.9393L21.5147 1.3934C20.9289 0.807611 19.9792 0.807611 19.3934 1.3934C18.8076 1.97919 18.8076 2.92893 19.3934 3.51472L27.8787 12L19.3934 20.4853C18.8076 21.0711 18.8076 22.0208 19.3934 22.6066C19.9792 23.1924 20.9289 23.1924 21.5147 22.6066L31.0607 13.0607ZM0 13.5L30 13.5L30 10.5L0 10.5L0 13.5Z" fill="#000000"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="pro-item">
+                                <div class="probtn-wrap">
+                                    <a href="https://poised-phosphorus-84f.notion.site/Naver-Shopping-b7603cabeef343d69319d228e68a50ae" target="_blank">
+                                        <div class="ig-wrap">
+                                            <img src="./asset/images/navershopingig.png" alt="navershpping">
+                                            <div class="text-box">
+                                                <p class="detail-title">TYPE</p>
+                                                <span class="type">Mobile</span>
+                                            </div>
+                                            <div class="code-area">
+                                                <p class="txt">⇨ Json을 이용해 Html에 data를 구현</p><div class="b_txt">More Review</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="https://yoonnjeong.github.io/naver-shop/" target="_blank"  onclick="window.open(this.href, '', 'width=375, height=667'); return false;">
+                                        <div class="pro-name">
+                                            <i class="ic-line"></i>
+                                            <div class="name-wrap">
+                                                <div class="pro-title">Naver Shopping</div>
+                                                <div class="point">
+                                                    <span class="sub-tit">Json</span>
+                                                    <div class="cover"></div>
+                                                </div>
+                                            </div>
+                                            <div class="arrow-right">
+                                                <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M31.0607 13.0607C31.6464 12.4749 31.6464 11.5251 31.0607 10.9393L21.5147 1.3934C20.9289 0.807611 19.9792 0.807611 19.3934 1.3934C18.8076 1.97919 18.8076 2.92893 19.3934 3.51472L27.8787 12L19.3934 20.4853C18.8076 21.0711 18.8076 22.0208 19.3934 22.6066C19.9792 23.1924 20.9289 23.1924 21.5147 22.6066L31.0607 13.0607ZM0 13.5L30 13.5L30 10.5L0 10.5L0 13.5Z" fill="#000000"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="pro-item">
+                                <div class="probtn-wrap">
+                                    <a href="https://poised-phosphorus-84f.notion.site/NAVER-Careers-1cf9cd646f5546858f7660e5db96634c" target="_blank">
+                                        <div class="ig-wrap">
+                                            <img src="./asset/images/navercareerig.png" alt="naver career">
+                                            <div class="text-box">
+                                                <p class="detail-title">TYPE</p>
+                                                <span class="type">Response</span>
+                                            </div>
+                                            <div class="code-area">
+                                                <p class="txt">⇨ PC부터 Mobile까지 가능한 반응형 사이트로 구현</p><div class="b_txt">More Review</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="https://yoonnjeong.github.io/naver-career/" target='_blank'>
+                                        <div class="pro-name">
+                                            <i class="ic-line"></i>
+                                            <div class="name-wrap">
+                                                <div class="pro-title">Naver career</div>
+                                                <div class="point">
+                                                    <span class="sub-tit">Response</span>
+                                                    <div class="cover"></div>
+                                                </div>
+                                            </div>
+                                            <div class="arrow-right">
+                                                <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M31.0607 13.0607C31.6464 12.4749 31.6464 11.5251 31.0607 10.9393L21.5147 1.3934C20.9289 0.807611 19.9792 0.807611 19.3934 1.3934C18.8076 1.97919 18.8076 2.92893 19.3934 3.51472L27.8787 12L19.3934 20.4853C18.8076 21.0711 18.8076 22.0208 19.3934 22.6066C19.9792 23.1924 20.9289 23.1924 21.5147 22.6066L31.0607 13.0607ZM0 13.5L30 13.5L30 10.5L0 10.5L0 13.5Z" fill="#000000"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="pro-item">
+                                <div class="probtn-wrap">
+                                    <a href="https://poised-phosphorus-84f.notion.site/b54a12f6d838422e8466f8ecd3efa3dc" target="_blank">
+                                        <div class="ig-wrap">
+                                            <img src="./asset/images/andarig.png" alt="andar">
+                                            <div class="text-box">
+                                                <p class="detail-title">TYPE</p>
+                                                <span class="type">Mobile</span>
+                                            </div>
+                                            <div class="code-area">
+                                                <p class="txt">⇨ jquery를 javaScript로 변경하여 구현</p><div class="b_txt">More Review</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="https://yoonnjeong.github.io/andar-js/" target="_blank"  onclick="window.open(this.href, '', 'width=375, height=667'); return false;">
+                                        <div class="pro-name">
+                                            <i class="ic-line"></i>
+                                            <div class="name-wrap">
+                                                <div class="pro-title">andar</div>
+                                                <div class="point">
+                                                    <span class="sub-tit">Swiper API</span>
+                                                    <div class="cover"></div>
+                                                </div>
+                                            </div>
+                                            <div class="arrow-right">
+                                                <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M31.0607 13.0607C31.6464 12.4749 31.6464 11.5251 31.0607 10.9393L21.5147 1.3934C20.9289 0.807611 19.9792 0.807611 19.3934 1.3934C18.8076 1.97919 18.8076 2.92893 19.3934 3.51472L27.8787 12L19.3934 20.4853C18.8076 21.0711 18.8076 22.0208 19.3934 22.6066C19.9792 23.1924 20.9289 23.1924 21.5147 22.6066L31.0607 13.0607ZM0 13.5L30 13.5L30 10.5L0 10.5L0 13.5Z" fill="#000000"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="pro-item">
+                                <div class="probtn-wrap">
+                                    <a href="https://poised-phosphorus-84f.notion.site/7ef7587a40a64ffaab2e9769c9e8354b" target="_blank">
+                                        <div class="ig-wrap">
+                                            <img src="./asset/images/seoulig.png" alt="seoulcityhall">
+                                            <div class="text-box">
+                                                <p class="detail-title">TYPE</p>
+                                                <span>PC</span>
+                                            </div>
+                                            <div class="code-area">
+                                                <p class="txt">⇨ Web Accessibility 준수</p><div class="b_txt">More Review</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="https://yoonnjeong.github.io/SEOUL/" target="_blank">
+                                        <div class="pro-name">
+                                            <i class="ic-line"></i>
+                                            <div class="name-wrap">
+                                                <div class="pro-title">Seoul City Hall</div>
+                                                <div class="point">
+                                                    <span class="sub-tit">Web Accessibility</span>
+                                                    <div class="cover"></div>
+                                                </div>
+                                            </div>
+                                            <div class="arrow-right">
+                                                <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M31.0607 13.0607C31.6464 12.4749 31.6464 11.5251 31.0607 10.9393L21.5147 1.3934C20.9289 0.807611 19.9792 0.807611 19.3934 1.3934C18.8076 1.97919 18.8076 2.92893 19.3934 3.51472L27.8787 12L19.3934 20.4853C18.8076 21.0711 18.8076 22.0208 19.3934 22.6066C19.9792 23.1924 20.9289 23.1924 21.5147 22.6066L31.0607 13.0607ZM0 13.5L30 13.5L30 10.5L0 10.5L0 13.5Z" fill="#000000"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="pro-item">
+                                <div class="probtn-wrap">
+                                    <a href="https://poised-phosphorus-84f.notion.site/NAVER-50501e2a088041f29baf2648830e0616" target="_blank">
+                                        <div class="ig-wrap">
+                                            <img src="./asset/images/naverig.png" alt="naver">
+                                            <div class="text-box">
+                                                <p class="detail-title">TYPE</p>
+                                                <span class="type">PC</span>
+                                            </div>
+                                            <div class="code-area">
+                                                <p class="txt">⇨ IR(Image Replacement)을 이용해 접근성 준수 </p><div class="b_txt">More Review</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="https://yoonnjeong.github.io/naver/" target="_blank">
+                                        <div class="pro-name">
+                                            <i class="ic-line"></i>
+                                            <div class="name-wrap">
+                                                <div class="pro-title">Naver</div>
+                                                <div class="point">
+                                                    <span class="sub-tit">IR/IS</span>
+                                                    <div class="cover"></div>
+                                                </div>
+                                            </div>
+                                            <div class="arrow-right">
+                                                <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M31.0607 13.0607C31.6464 12.4749 31.6464 11.5251 31.0607 10.9393L21.5147 1.3934C20.9289 0.807611 19.9792 0.807611 19.3934 1.3934C18.8076 1.97919 18.8076 2.92893 19.3934 3.51472L27.8787 12L19.3934 20.4853C18.8076 21.0711 18.8076 22.0208 19.3934 22.6066C19.9792 23.1924 20.9289 23.1924 21.5147 22.6066L31.0607 13.0607ZM0 13.5L30 13.5L30 10.5L0 10.5L0 13.5Z" fill="#000000"></path>
+                                                </svg>
+                                            </div>
+                                            <i class="ic-line"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="sc-prointro">
+            <div class="intro-list">
+                <div class="intro-item">
+                    <div class="l-inner">
+                        <div class="title-area">
+                            <span class="sub-title">Team project</span>
+                            <h2 class="work-title">kakao mobility</h2>
+                        </div>
+                        <div class="code-area">
+                            <p class="txt">⇨ Git을 통한 프로젝트 협력작업</p>
+                            <p class="txt">⇨ mouse hover과 click event 등 다양한 이벤트 구현</p>
+                            <p class="txt">⇨ Tab Menu 기능 구현</p>
+                            <p class="txt">⇨ Gsap를 통한 Pallerx 효과 구현</p>
+                        </div>
+                        <div class="detail-area">
+                            <div class="desc-area">
+                                <div class="text-box">
+                                    <p class="detail-title">TIME</p>
+                                    <span>4DAYS</span>
+                                </div>
+                                <div class="text-box">
+                                    <p class="detail-title">SKILLS</p>
+                                    <span>jQuery<br>SCSS<br>GSAP<br>ScrollTrigger</span>
+                                </div>
+                                <div class="text-box">
+                                    <p class="detail-title">TYPE</p>
+                                    <span>PC</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="link-notion">Learned more</a>
+                    </div>
+                </div>
+                <div class="intro-item">
+                    <div class="l-inner">
+                        <div class="title-area">
+                            <span class="sub-title">Gsap</span>
+                            <h2 class="work-title">Belarosa</h2>
+                        </div>
+                        <div class="code-area">
+                            <p class="txt">⇨ Gsap의 ScrollTrigger를 통한 Timeline 구현</p>
+                            <p class="txt">⇨ 모바일 325px 해상도까지 구현되는 화면</p>
+                            <p class="txt">⇨ Tab Menu 기능 구현</p>
+                            <p class="txt">⇨ Tramsition을 이용한 섬세한 모션 구현</p>
+                            <p class="txt">⇨ Gsap를 통한 Pallerx 효과 구현</p>
+                        </div>
+                        <div class="detail-area">
+                            <div class="desc-area">
+                                <div class="text-box">
+                                    <p class="detail-title">TIME</p>
+                                    <span>5~6DAYS</span>
+                                </div>
+                                <div class="text-box">
+                                    <p class="detail-title">SKILLS</p>
+                                    <span>jQuery<br>SCSS<br>GSAP<br>ScrollTrigger</span>
+                                </div>
+                                <div class="text-box">
+                                    <p class="detail-title">TYPE</p>
+                                    <span>Response</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="link-notion">Learned more</a>
+                    </div>
+                </div>
+                <div class="intro-item">
+                    <div class="l-inner">
+                        <div class="title-area">
+                            <span class="sub-title">Json</span>
+                            <h2 class="work-title">Naver Shopping</h2>
+                        </div>
+                        <div class="code-area">
+                            <p class="txt">⇨ Json을 이용해 Html에 data를 구현</p>
+                            <p class="txt">⇨ 적응형 Mobile size로 구현</p>
+                            <p class="txt">⇨ Tab Menu 기능 구현</p>
+                            <p class="txt">⇨ Swiper js API를 이용한 효과 구현</p>
+                            <p class="txt">⇨ Tramsition을 이용한 섬세한 모션 구현</p>
+                        </div>
+                        <div class="detail-area">
+                            <div class="desc-area">
+                                <div class="text-box">
+                                    <p class="detail-title">TIME</p>
+                                    <span>3DAYS</span>
+                                </div>
+                                <div class="text-box">
+                                    <p class="detail-title">SKILLS</p>
+                                    <span>jQuery<br>JSON<br>Swiper</span>
+                                </div>
+                                <div class="text-box">
+                                    <p class="detail-title">TYPE</p>
+                                    <span>Mobile</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="link-notion">Learned more</a>
+                    </div>
+                </div>
+                <div class="intro-item">
+                    <div class="l-inner">
+                        <div class="title-area">
+                            <span class="sub-title">Response</span>
+                            <h2 class="work-title">Naver Career</h2>
+                        </div>
+                        <div class="code-area">
+                            <p class="txt">⇨ PC부터 Mobile까지 가능한 반응형 사이트로 구현</p>
+                            <p class="txt">⇨ click event 등 다양한 이벤트 구현</p>
+                            <p class="txt">⇨ Tab Menu 기능 구현</p>
+                            <p class="txt">⇨ Swiper js API를 이용한 효과 구현</p>
+                            <p class="txt">⇨ Tramsition을 이용한 섬세한 모션 구현</p>
+                            <p class="txt">⇨ Keyframe을 통한 Animation 모션 구현</p>
+                        </div>
+                        <div class="detail-area">
+                            <div class="desc-area">
+                                <div class="text-box">
+                                    <p class="detail-title">TIME</p>
+                                    <span>3DAYS</span>
+                                </div>
+                                <div class="text-box">
+                                    <p class="detail-title">SKILLS</p>
+                                    <span>jQuery<br>SCSS<br>Swiper</span>
+                                </div>
+                                <div class="text-box">
+                                    <p class="detail-title">TYPE</p>
+                                    <span>Response</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="link-notion">Learned more</a>
+                    </div>
+                </div>
+                <div class="intro-item">
+                    <div class="l-inner">
+                        <div class="title-area">
+                            <span class="sub-title">Moblie</span>
+                            <h2 class="work-title">andar</h2>
+                        </div>
+                        <div class="code-area">
+                            <p class="txt">⇨ jquery를 javaScript로 변경하여 구현</p>
+                            <p class="txt">⇨ 적응형 Mobile size로 구현</p>
+                            <p class="txt">⇨ JavaScript mousewheel event를 통한 모션 구현</p>
+                            <p class="txt">⇨ Swiper js API를 이용한 효과 구현</p>
+                            <p class="txt">⇨ Tramsition을 이용한 섬세한 모션 구현</p>
+                        </div>
+                        <div class="detail-area">
+                            <div class="desc-area">
+                                <div class="text-box">
+                                    <p class="detail-title">TIME</p>
+                                    <span>2~3DAYS</span>
+                                </div>
+                                <div class="text-box">
+                                    <p class="detail-title">SKILLS</p>
+                                    <span>jQuery<br>JavaScript<br>swiper</span>
+                                </div>
+                                <div class="text-box">
+                                    <p class="detail-title">TYPE</p>
+                                    <span>Mobile</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="link-notion">Learned more</a>
+                    </div>
+                </div>
+                <div class="intro-item">
+                    <div class="l-inner">
+                        <div class="title-area">
+                            <span class="sub-title">PC</span>
+                            <h2 class="work-title">Seoul City Hall</h2>
+                        </div>
+                        <div class="code-area">
+                            <p class="txt">⇨ 비장애인과 장애인 모두 사용 가능하도록 Web Accessibility 준수</p>
+                            <p class="txt">⇨ 모든 브라우저에서 사용 가능하도록 Cross Browsing 준수</p>
+                            <p class="txt">⇨ Tab Menu 기능 구현</p>
+                            <p class="txt">⇨ Swiper js API를 이용한 효과 구현</p>
+                            <p class="txt">⇨ keycode를 이용한 script로 편의성 제공</p>
+                            <p class="txt">⇨ Tramsition을 이용한 섬세한 모션 구현</p>
+                        </div>
+                        <div class="detail-area">
+                            <div class="desc-area">
+                                <div class="text-box">
+                                    <p class="detail-title">TIME</p>
+                                    <span>4DAYS</span>
+                                </div>
+                                <div class="text-box">
+                                    <p class="detail-title">SKILLS</p>
+                                    <span>jQuery<br>SCSS<br>GSAP<br>ScrollTrigger</span>
+                                </div>
+                                <div class="text-box">
+                                    <p class="detail-title">TYPE</p>
+                                    <span>Response</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="link-notion">Learned more</a>
+                    </div>
+                </div>
+                <div class="intro-item">
+                    <div class="l-inner">
+                        <div class="title-area">
+                            <span class="sub-title">PC</span>
+                            <h2 class="work-title">Naver</h2>
+                        </div>
+                        <div class="code-area">
+                            <p class="txt">⇨ IR(Image Replacement)을 이용해 접근성 준수</p>
+                            <p class="txt">⇨ IS(Image Sprite)을 이용해 서버 트래픽 감소</p>
+                            <p class="txt">⇨ 검색엔진 최적화(SEO)에 좋도록 시멘틱 마크업 작성</p>
+                            <p class="txt">⇨ 웹표준에 맞는 마크업 작성</p>
+                        </div>
+                        <div class="detail-area">
+                            <div class="desc-area">
+                                <div class="text-box">
+                                    <p class="detail-title">TIME</p>
+                                    <span>4DAYS</span>
+                                </div>
+                                <div class="text-box">
+                                    <p class="detail-title">SKILLS</p>
+                                    <span>SEO<br>Web Accessibility</span>
+                                </div>
+                                <div class="text-box">
+                                    <p class="detail-title">TYPE</p>
+                                    <span>PC</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="link-notion">Learned more</a>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section class="sc-me">
+            <div class="contact-area">
+                <h2 class="title">Are you curious about me?</h2>
+                <div class="contact-txt"><a href="tel:010-8927-6518">CONTACT</a></div>
+            </div>
+            <div class="magic-area">
+                <a href="tel:010-8927-6518" class="sub-text">
+                    MAKE MAGIC WITH ME
+                </a>
+                <a href="tel:010-8927-6518">
+                    <div class="arrow-right">
+                        <svg width="32" height="32" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M31.0607 13.0607C31.6464 12.4749 31.6464 11.5251 31.0607 10.9393L21.5147 1.3934C20.9289 0.807611 19.9792 0.807611 19.3934 1.3934C18.8076 1.97919 18.8076 2.92893 19.3934 3.51472L27.8787 12L19.3934 20.4853C18.8076 21.0711 18.8076 22.0208 19.3934 22.6066C19.9792 23.1924 20.9289 23.1924 21.5147 22.6066L31.0607 13.0607ZM0 13.5L30 13.5L30 10.5L0 10.5L0 13.5Z" fill="#FFFFFF"></path>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="f-wrap">
+                <div class="copyright">©2022 seo yoon jeong - All Rights Reserved</div>
+                <div class="ambition">
+                    <span class="content-tx">perseverance</span>
+                    <span class="content-tx">endeavor</span>
+                    <span class="content-tx">digithead</span>
+                    <span class="content-tx">explore</span>
+                    <span class="content-tx">passionate</span>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
