@@ -210,11 +210,11 @@ header .pro-list a {
 }
 header .pro-list a .space {
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 8px;
 }
 header .pro-list .num-tx {
   font-size: 18px;
-  width: 170px;
+  width: 190px;
   opacity: 0.8;
 }
 header .pro-list .title-tx {
@@ -436,7 +436,6 @@ footer .content-tx + .content-tx {
 .sc-main .over {
   transform: rotate(45deg) translateY(150px);
   transform-origin: bottom left;
-  transition: 0.3s;
 }
 .sc-main .scroll {
   position: absolute;
@@ -708,7 +707,6 @@ footer .content-tx + .content-tx {
   width: 50%;
   max-width: 550px;
   opacity: 0;
-  transition: 0.6s;
   pointer-events: none;
 }
 .sc-project .project .ig-wrap img {
@@ -726,6 +724,7 @@ footer .content-tx + .content-tx {
 }
 .sc-project .project .ig-wrap .code-area .b_txt {
   font-weight: 400;
+  font-size: 20px;
 }
 .sc-project .project .ig-wrap .text-box {
   position: absolute;
