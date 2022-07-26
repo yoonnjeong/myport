@@ -427,13 +427,35 @@
                     background-color: #f7f7f7;
                 }
             }
+            .right-wrap {
+                width: 50%;
+                position: relative;
+
+                a {
+                    display: block;
+                }
+
+                .link-review {
+                    position: absolute;
+                    right: 80px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    font-size: 20px;
+                    line-height: 50px;
+                    width: 150px;
+                    text-align: center;
+                    border: 1px solid #000;
+                    border-radius: 30px;
+                    transition: .3s;
+                }
+            }
             .probtn-wrap {
                 width: 100%;
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
 
-                a {
+                > a {
                     width: 50%;
                     display: block;
                 }
@@ -441,6 +463,9 @@
                 &:hover {
                     .pro-title {
                         padding-left: 20px;
+                    }
+                    .link-review {
+                        right: 60px;
                     }
                     .arrow-right {
                         svg {
@@ -653,7 +678,7 @@
                     display: block;
                 }
                 .probtn-wrap {
-                    a {
+                    > a {
                         &:first-child {
                             display: none;
                         }
