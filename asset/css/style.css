@@ -807,6 +807,18 @@ footer .content-tx + .content-tx {
     left: 0;
   }
 }
+@media screen and (max-width: 1295px) {
+  .sc-project .project .ig-wrap {
+    max-width: 420px;
+    left: -5px;
+  }
+  .sc-project .project .pro-item .probtn-wrap > a:first-child {
+    width: 45%;
+  }
+  .sc-project .project .pro-item .right-wrap {
+    width: 55%;
+  }
+}
 @media screen and (max-width: 1200px) {
   .sc-project .txt-wrap {
     font-size: 125px;
@@ -822,14 +834,32 @@ footer .content-tx + .content-tx {
   .sc-project .txt-wrap .desc {
     font-size: 25px;
   }
+}
+@media screen and (max-width: 1080px) {
   .sc-project .project .ig-wrap {
-    max-width: 500px;
-    left: -20px;
+    max-width: 380px;
+    left: -10px;
+  }
+  .sc-project .project .pro-item .probtn-wrap > a:first-child {
+    width: 40%;
+  }
+  .sc-project .project .pro-item .right-wrap {
+    width: 60%;
+  }
+  .sc-project .project .code-area .b_txt {
+    display: none;
   }
 }
-@media screen and (max-width: 1025px) {
-  .sc-project .cover {
+@media screen and (max-width: 1000px) {
+  .sc-project .project .ig-wrap {
+    max-width: 420px;
+    left: -5px;
+  }
+  .sc-project .project .pro-item .probtn-wrap > a:first-child {
     display: none;
+  }
+  .sc-project .project .pro-item .right-wrap {
+    width: 100%;
   }
 }
 @media screen and (max-width: 940px) {
@@ -865,20 +895,15 @@ footer .content-tx + .content-tx {
     display: none;
   }
 }
-@media screen and (max-width: 784px) {
+@media screen and (max-width: 602px) {
   .sc-project .project .pro-item .point {
     display: none;
   }
-}
-@media screen and (max-width: 580px) {
-  .sc-project .project .pro-item .point {
-    display: block;
+  .sc-project .project .pro-item .right-wrap .link-review {
+    right: 65px;
   }
-  .sc-project .project .pro-item .probtn-wrap > a {
-    width: 100%;
-  }
-  .sc-project .project .pro-item .probtn-wrap > a:first-child {
-    display: none;
+  .sc-project .project .pro-item .probtn-wrap:hover .link-review {
+    right: 45px;
   }
 }
 @media screen and (max-width: 500px) {

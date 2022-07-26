@@ -575,6 +575,28 @@
         }
     }
 }
+@media screen and (max-width: 1295px) {
+    .sc-project {
+        .project {
+            .ig-wrap {
+                max-width: 420px;
+                left: -5px;
+            }
+            .pro-item {
+                .probtn-wrap {
+                    > a {
+                        &:first-child {
+                            width: 45%;
+                        }
+                    }
+                }
+                .right-wrap {
+                    width: 55%;
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 1200px) {
     .sc-project {
         .txt-wrap {
@@ -597,18 +619,54 @@
                 font-size: 25px;
             }
         }
+    }
+}
+@media screen and (max-width: 1080px) {
+    .sc-project {
         .project {
             .ig-wrap {
-                max-width: 500px;
-                left: -20px;
+                max-width: 380px;
+                left: -10px;
+            }
+            .pro-item {
+                .probtn-wrap {
+                    > a {
+                        &:first-child {
+                            width: 40%;
+                        }
+                    }
+                }
+                .right-wrap {
+                    width: 60%;
+                }
+            }
+            .code-area {
+                .b_txt {
+                    display: none;
+                }
             }
         }
     }
 }
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1000px) {
     .sc-project {
-        .cover {
-            display: none;
+        .project {
+            .ig-wrap {
+                max-width: 420px;
+                left: -5px;
+            }
+            .pro-item {
+                .probtn-wrap {
+                    > a {
+                        &:first-child {
+                            display: none;
+                        }
+                    }
+                }
+                .right-wrap {
+                    width: 100%;
+                }
+            }
         }
     }
 }
@@ -659,35 +717,26 @@
         }
     }
 }
-@media screen and (max-width: 784px) {
+@media screen and (max-width: 602px) {
     .sc-project {
         .project {
             .pro-item {
                 .point {
                     display: none;
                 }
-            }
-        }
-    }
-}
-@media screen and (max-width: 580px) {
-    .sc-project {
-        .project {
-            .pro-item {
-                .point {
-                    display: block;
+                .right-wrap {
+                    .link-review {
+                        right: 65px;
+                    }
                 }
                 .probtn-wrap {
-                    > a {
-                        &:first-child {
-                            display: none;
+                    &:hover {
+                        .link-review {
+                            right: 45px;
                         }
-                        
-                        width: 100%;
                     }
                 }
             }
-            
         }
     }
 }
