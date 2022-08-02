@@ -670,6 +670,7 @@ footer .content-tx + .content-tx {
 }
 .sc-project .project .pro-item .point {
   position: relative;
+  pointer-events: none;
 }
 .sc-project .project .pro-item .point .cover {
   position: absolute;
@@ -678,6 +679,7 @@ footer .content-tx + .content-tx {
   width: 100%;
   height: 100%;
   background-color: #f7f7f7;
+  pointer-events: none;
 }
 .sc-project .project .pro-item .right-wrap {
   width: 50%;

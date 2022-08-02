@@ -94,21 +94,21 @@ $(function(){
 
             gsap.to($('.sc-project .pro-item').find('.ig-wrap'), {
                 xPercent: igW,
-                skewY: igH,
+                yPercent: igH,
                 ease: Power1.easeOut,
             });
         }
     );
 
-    $('.sc-project .pro-item .pro-name').hover(
-        function(e){
-            var num = $(this).parent().parent().parent().index() + 1;
-            // console.log(num);
-            gsap.to($(this).parent().parent().find('.ig-wrap'), {
-                yPercent: -5 * num,
-            });
-        }   
-    );
+    // $('.sc-project .pro-item .pro-name').hover(
+    //     function(e){
+    //         var num = $(this).parent().parent().parent().index() + 1;
+    //         // console.log(num);
+    //         gsap.to($(this).parent().parent().find('.ig-wrap'), {
+    //             yPercent: -5 * num,
+    //         });
+    //     }   
+    // );
 
     $('.sc-project .pro-item').hover(
         function(){
@@ -152,7 +152,6 @@ $(function(){
 
     $(document).scroll(function(){
         var scTop = $(document).scrollTop();
-        // console.log(scTop);
         if(scTop > 0){
             $('header').addClass('color');
         }
