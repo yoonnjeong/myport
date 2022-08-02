@@ -100,15 +100,15 @@ $(function(){
         }
     );
 
-    // $('.sc-project .pro-item .pro-name').hover(
-    //     function(e){
-    //         var num = $(this).parent().parent().parent().index() + 1;
-    //         // console.log(num);
-    //         gsap.to($(this).parent().parent().find('.ig-wrap'), {
-    //             yPercent: -5 * num,
-    //         });
-    //     }   
-    // );
+    $('.sc-project .pro-item .pro-name').hover(
+        function(e){
+            var num = $(this).parent().parent().parent().index() + 1;
+            // console.log(num);
+            gsap.to($(this).parent().parent().find('.ig-wrap'), {
+                yPercent: -5 * num,
+            });
+        }   
+    );
 
     $('.sc-project .pro-item').hover(
         function(){
