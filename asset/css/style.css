@@ -257,6 +257,9 @@ header .btn-menu {
 header .btn-menu .hide {
   display: none;
 }
+header .btn-menu > * {
+  display: block;
+}
 
 @media screen and (max-width: 1160px) {
   header .btn-menu {
