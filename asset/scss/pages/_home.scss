@@ -429,28 +429,6 @@
                     pointer-events: none;
                 }
             }
-            .right-wrap {
-                width: 50%;
-                position: relative;
-
-                a {
-                    display: block;
-                }
-
-                .link-review {
-                    position: absolute;
-                    right: 80px;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    font-size: 20px;
-                    line-height: 50px;
-                    width: 150px;
-                    text-align: center;
-                    border: 1px solid #000;
-                    border-radius: 30px;
-                    transition: .3s;
-                }
-            }
             .probtn-wrap {
                 width: 100%;
                 display: flex;
@@ -463,22 +441,46 @@
                 }
 
                 &:hover {
-                    .pro-title {
-                        padding-left: 20px;
-                    }
-                    .link-review {
-                        right: 60px;
-                    }
-                    .arrow-right {
-                        svg {
-                            margin-right: 0px;
-                        }
-                    }
                     .ig-wrap {
                         opacity: 1;
                         pointer-events: all;
                     }
                 }
+            }
+        }
+        .right-wrap {
+            width: 50%;
+            position: relative;
+
+            a {
+                display: block;
+            }
+
+            .link-site {
+                position: absolute;
+                right: 165px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 20px;
+                line-height: 50px;
+                width: 120px;
+                text-align: center;
+                border: 1px solid #000;
+                border-radius: 30px;
+                transition: 0.3s;
+            }
+            .link-review {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 20px;
+                line-height: 50px;
+                width: 140px;
+                text-align: center;
+                border: 1px solid #000;
+                border-radius: 30px;
+                transition: 0.3s;
             }
         }
         .ig-wrap {
@@ -504,11 +506,6 @@
                 display: flex;
                 justify-content: space-between;
                 width: calc(100% - 40px);
-
-                .b_txt {
-                    font-weight: 400;
-                    font-size: 20px;
-                }
             }
             .text-box {
                 position: absolute;
@@ -519,16 +516,6 @@
                 display: inline-block;
                 font-weight: 400;
                 margin-right: 10px;
-            }
-        }
-        .arrow-right {
-            display: flex;
-            align-items: center;
-            transition: .3s;
-
-            svg {
-                margin-right: 15px;
-                transition: .3s;
             }
         }
         .pro-name {
@@ -642,11 +629,6 @@
                     width: 60%;
                 }
             }
-            .code-area {
-                .b_txt {
-                    display: none;
-                }
-            }
         }
     }
 }
@@ -719,24 +701,29 @@
         }
     }
 }
-@media screen and (max-width: 602px) {
+@media screen and (max-width: 690px) {
     .sc-project {
         .project {
             .pro-item {
                 .point {
                     display: none;
                 }
-                .right-wrap {
-                    .link-review {
-                        right: 65px;
-                    }
+            }
+        }
+    }
+}
+@media screen and (max-width: 568px) {
+    .sc-project {
+        .project {
+            .right-wrap{
+                .link-review{
+                    font-size: 16px;
+                    width: 100px;
                 }
-                .probtn-wrap {
-                    &:hover {
-                        .link-review {
-                            right: 45px;
-                        }
-                    }
+                .link-site {
+                    font-size: 16px;
+                    right: 124px;
+                    width: 82px;
                 }
             }
         }
@@ -746,6 +733,35 @@
     .sc-project {
         .txt-wrap {
             font-size: 60px;
+        }
+    }
+}
+@media screen and (max-width: 468px) {
+    .sc-project {
+        .project {
+            .pro-title {
+                font-size: 24px;
+            }
+        }
+
+    }
+}
+@media screen and (max-width: 415px) {
+    .sc-project {
+        .project {
+            .right-wrap{
+                .link-review{
+                    font-size: 14px;
+                    width: 90px;
+                    line-height: 38px;
+                }
+                .link-site {
+                    font-size: 14px;
+                    right: 106px;
+                    width: 65px;
+                    line-height: 38px;
+                }
+            }
         }
     }
 }
