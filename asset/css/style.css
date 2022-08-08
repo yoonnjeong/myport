@@ -714,7 +714,7 @@ footer .content-tx + .content-tx {
   top: 50%;
   transform: translateY(-50%);
   font-size: 20px;
-  line-height: 50px;
+  line-height: 45px;
   width: 120px;
   text-align: center;
   border: 1px solid #000;
@@ -727,7 +727,7 @@ footer .content-tx + .content-tx {
   top: 50%;
   transform: translateY(-50%);
   font-size: 20px;
-  line-height: 50px;
+  line-height: 45px;
   width: 140px;
   text-align: center;
   border: 1px solid #000;
