@@ -170,5 +170,73 @@ $(function(){
         }
     });
 
-    
+    fetch('https://yoonnjeong.github.io/myport/asset/data/product.json')
+    .then((response) => response.json())
+    .then((json) => {
+        x = json.imageItems;
+        
+        html='';
+        
+  
+        x.forEach(a => {
+  
+            pageSize = '';
+          if(a.pageSize != null) {
+            pageSize = `<a href="${a.href}" target="_blank"  onclick="${a.pageSize}"></a>`;
+          } 
+  
+          html += `<a href="${a.href}" target="_blank"  onclick="${a.pageSize}">
+          <div class="ig-wrap">
+              <img src="${a.thmbnail}">
+              <div class="text-box">
+                  <p class="detail-title">TYPE</p>
+                  <span class="type">${a.type}</span>
+              </div>
+              <div class="code-area">
+                  <p class="txt">${a.pageSize}</p>
+              </div>
+          </div>
+      </a>`;
+  
+        });
+  
+        $('.probtn-wrap').append(html); 
+    })
+
+    fetch('https://yoonnjeong.github.io/myport/asset/data/product.json')
+    .then((response) => response.json())
+    .then((json) => {
+        x = json.textItems;
+        
+        html='';
+        
+  
+        x.forEach(a => {
+  
+            pageSize = '';
+          if(a.pageSize != null) {
+            pageSize = `<a href="${a.href}" target="_blank"  onclick="${a.pageSize}"></a>`;
+          } 
+  
+          html += `<a href="${a.href}" target="_blank" onclick="${a.pageSize}">
+          <div class="pro-name">
+              <i class="ic-line"></i>
+              <div class="name-wrap">
+                  <div class="pro-title">${a.projectName}</div>
+                  <div class="point">
+                      <span class="sub-tit">${a.point}</span>
+                      <div class="cover"></div>
+                  </div>
+              </div>
+          </div>
+      </a>
+      <a href="${a.href}" target="_blank" onclick="${a.pageSize}" class="link-site">Click Site</a>
+      <a href="${a.codehref}" target="_blank" class="link-review">Code Review</a>`;
+  
+        });
+  
+        $('.right-wrap').append(html);
+    })
+
+
 })
